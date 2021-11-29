@@ -1,0 +1,134 @@
+.user-info-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  .avatar-container {
+    width: 30%;
+    .avatar {
+      width: 80%;
+      border-radius: 100%;
+    }
+  }
+  .info-container {
+    width: 70%;
+    justify-content: space-between;
+    .info-sub-container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      h1 {
+        font-weight: 300;
+        margin-top: 0;          
+      }  
+    }
+    .info-sub-container-2 {
+      width: 100%;
+      .login {
+        color: rgb(68, 119, 228);
+      }
+      p {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+.repos-info-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  
+  .repos {
+    width: 70%;
+    display: flex;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgb(16, 23, 37);
+    .repos-sub-container {
+      width: 33.333%;
+      .link {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.general-info-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  .general-info {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    a {
+      text-decoration: none;
+      color: rgb(179, 179, 179);
+    }
+    .detail {
+      width: 45%;
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      .icon {
+        margin-right: 5px;
+      }
+    }            
+  }
+}
+
+// RESPONSIVE
+
+@media screen and (max-width: 992px) {
+  .user-info-container {
+    flex-direction: column;
+    .avatar-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .avatar {
+        width: 30%;
+      }
+    }
+    .info-container {
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+  .repos-info-container {
+    margin-top: 30px;
+    .repos {
+      width: 100%;
+    }   
+  }
+  .general-info-container {
+    .general-info {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .user-info-container {
+    .info-container {
+      .info-sub-container {
+        flex-direction: column;
+        margin-bottom: 30px;
+      }
+    }
+    .avatar-container {
+      .avatar {
+        width: 50%;
+      }
+    }
+  } 
+  .general-info-container {
+    .general-info {
+      .detail {
+        width: 100%;
+      }
+    }
+  }
+}

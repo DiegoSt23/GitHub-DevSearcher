@@ -1,0 +1,29 @@
+.dev-card {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: rgb(34, 48, 77); 
+  padding: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  p {
+    color: rgb(179, 179, 179);
+    font-weight: 300;
+  }
+}
+
+// RESPONSIVE
+
+@media screen and (max-width: 992px) {
+  .dev-card {
+    width: 80%;
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .dev-card {
+    width: 95%;
+  } 
+}

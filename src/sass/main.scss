@@ -1,0 +1,45 @@
+@import "./styles/search";
+@import "./styles/devCard";
+@import "./styles/devInfo";
+@import "./styles/repos";
+@import "./styles/followers";
+
+
+.main-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .title-container {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .github-icon {
+      font-size: 2.2rem;
+    }
+  }
+  .error-message {
+    margin-top: 30px;
+    color: red;
+  }
+}
+
+// RESPONSIVE
+
+@media screen and (max-width: 992px) {
+  .main-container {
+    .title-container {
+      width: 80%;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main-container {
+    .title-container {
+      width: 95%;
+    }
+  } 
+}

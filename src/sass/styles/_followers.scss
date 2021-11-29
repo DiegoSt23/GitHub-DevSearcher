@@ -1,0 +1,54 @@
+.followers-main-container {
+  width: 100%;
+  .nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    .user {
+      color: rgb(68, 119, 228);
+    }
+  }
+  .followers-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .follower-card {
+      width: 25%;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      overflow: hidden;
+      cursor: pointer;
+      h3 {
+        color: rgb(68, 119, 228);
+      }
+      .follower-avatar {
+        width: 100%;
+        border-radius: 100%;
+      }
+    }
+  }
+}
+
+// RESPONSIVE
+
+@media screen and (max-width: 992px) {
+  .followers-main-container {
+    .followers-container {
+      .follower-card {
+        width: 33.333%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .followers-main-container {
+    .followers-container {
+      .follower-card {
+        width: 50%;
+      }
+    }
+  }
+}
